@@ -12,4 +12,10 @@
 - Syntax: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c file_being_compiled
 
 ## 2-assembler ##
-- Here the script generates an assembly code file from the source c file as below
+- Here the script generates an assembly code file from the source c file as below and saves it as an assembly file
+- Syntax: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -S file_being_compiled
+
+## 3-name ##
+- Here, we are compiling a file and making an executable out of it with a certain name
+- Syntax: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c file_being_compiled -o compiled_resultts_file
+
