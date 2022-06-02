@@ -25,3 +25,6 @@
 
 ## 5-printf.c ##
 - Here we use the printf function to display text. Syntax has to be betty compliant
+
+## 6-size.c ##
+- Here we print out the various data types and their sizes
