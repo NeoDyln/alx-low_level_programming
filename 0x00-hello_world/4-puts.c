@@ -1,8 +1,8 @@
 #include <stdio.h>
 /*
- *main - This is the entry point
+ *main - Entry point
  *
- *return: Exit point. Alsways return 0 (Success)
+ *return: Always 0 (Success)
  */
 int main(void)
 {/* The function below outputs a text */
