@@ -7,5 +7,9 @@
 - Syntax: gcc -E file_being_compiled -o results_output_file
 
 ## 1-Compiler ##
-- Here we compile agai using the gcc command but we do not link. C compilers first preprocess, then compile, then assemble then link
-- Syntax: 
+- Here we compile agai using the gcc command but we do not link (-o is the option that allows us to link ) .
+- C compilers first preprocess, then compile, then assemble then link
+- Syntax: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c file_being_compiled
+
+## 2-assembler ##
+- Here the script generates an assembly code file from the source c file as below
