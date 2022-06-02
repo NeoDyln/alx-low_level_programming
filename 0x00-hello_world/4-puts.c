@@ -2,7 +2,7 @@
 /*
  *main - This is the entry point
  *
- *return - Exit point. Alsways return 0 (Success)
+ *return: Exit point. Alsways return 0 (Success)
  */
 int main(void)
 {/* The function below outputs a text */
