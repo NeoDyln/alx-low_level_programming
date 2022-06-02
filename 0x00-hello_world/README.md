@@ -40,6 +40,7 @@
 - Here, we basically make an assembly file(Refer to 2-assembly) but we add a -masm=intel tag
 - Syntax: gcc -S -masm-intel file.c
 - The resulting file will be a .s file with the same starter name as file.c, simply put it willl be file.s
+- Don't forget to make this into an executable
 
 ### 101-quote.c ###
 - Here we simply made a c program that outputs a text with a quote mark in it. To output it, simply escape it with a back slash as seen in the code sample
