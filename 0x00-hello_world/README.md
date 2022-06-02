@@ -21,6 +21,7 @@
 
 ## 4-puts.c ##
 - Here we coded a C program that uses the puts function to output a line of text we want
-- Syntax:
--- #include <stdio.h>
--- int main(){puts("text_you_want"); return 0;}
+- The syntax has to be betty compliant..It can be stressful to follow tho
+
+## 5-printf.c ##
+- Here we use the printf function to display text. Syntax has to be betty compliant
