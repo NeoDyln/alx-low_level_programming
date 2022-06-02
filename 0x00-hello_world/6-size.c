@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-#include <floats.h>
+#include <float.h>
 /**
  *main - Entry point
  *
