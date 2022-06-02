@@ -19,3 +19,8 @@
 - Here, we are compiling a file and making an executable out of it with a certain name
 - Syntax: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c file_being_compiled -o compiled_resultts_file
 
+## 4-puts.c ##
+- Here we coded a C program that uses the puts function to output a line of text we want
+- Syntax:
+-- #include <stdio.h>
+-- int main(){puts("text_you_want"); return 0;}
