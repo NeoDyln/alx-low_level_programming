@@ -9,7 +9,7 @@
 int main(void)
 {
 char letters[27] = "abcdefghijklmnopqrstuvwxyz";
-int i = 0;
+size_t i = 0;
 while (i < strlen(letters))
 {
 putchar("%c", letters[i]);
