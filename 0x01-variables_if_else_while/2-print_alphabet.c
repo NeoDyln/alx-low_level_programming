@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-char *letters = "abcdefghijklmnopqrstuvwxyz";
+char letters[27] = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
 while (i < strlen(letters))
 {
