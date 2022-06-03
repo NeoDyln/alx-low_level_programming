@@ -18,3 +18,7 @@
 ### 3-print_alphabets.c ###
 - Here we do the same as 2 above but we add an extra while loop as well as an extra condition for each while loop.
 - The extra condition is a checker that will check whether lowercase was printed and if so, we switch to a putchar function that converts each letter into uppercase via the toupper() function and prints it.
+
+### 4-print_alphabt.c ###
+- Here its more or less the same as the code of 2-print_alphabet.c with the exception of letters e and q
+- Remember that since the letters being printed decreased, we have to lower the size of the array by 2
