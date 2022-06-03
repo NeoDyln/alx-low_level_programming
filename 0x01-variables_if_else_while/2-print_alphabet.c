@@ -15,6 +15,6 @@ while (i < strlen(letters))
 putchar(letters[i]);
 i = i + 1;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
