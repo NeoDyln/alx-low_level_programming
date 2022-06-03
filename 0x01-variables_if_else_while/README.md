@@ -12,4 +12,9 @@
 ### 2-print_alphabet.c ###
 - Here we simply print out the alphabet characters in lowercase. There's a trick to it tho.
 - We are only permitted to use putchar twice therefore one use case has to be a loop through the letters while the other is for the break line
-- We make use of the for loop like so
+- We make use of the while loop like so such that we loop through printing each letter without a break line
+- Notice that since we are looping through a char type, we cannot use int types as indexex, we have to use size_t, the index marker for char types
+
+### 3-print_alphabets.c ###
+- Here we do the same as 2 above but we add an extra while loop as well as an extra condition for each while loop.
+- The extra condition is a checker that will check whether lowercase was printed and if so, we switch to a putchar function that converts each letter into uppercase via the toupper() function and prints it.
