@@ -12,7 +12,7 @@ char letters[27] = "abcdefghijklmnopqrstuvwxyz";
 size_t i = 0;
 while (i < strlen(letters))
 {
-putchar("%c", letters[i]);
+putchar(letters[i]);
 i = i + 1;
 }
 putchar("\n");
