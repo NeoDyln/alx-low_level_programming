@@ -24,4 +24,5 @@
 - Remember that since the letters being printed decreased, we have to lower the size of the array by 2
 
 ### 5-print_numbers ###
-- Here we use the same logic of a while loop we used in 2-print_alphabet.c with the exception that we are just printing increment results up to a point like so
+- Here we use the same logic of a while loop we used in 2-print_alphabet.c with the exception that we are just printing increment results up to a point like so.
+- As always, make sure your code is betty compliant
