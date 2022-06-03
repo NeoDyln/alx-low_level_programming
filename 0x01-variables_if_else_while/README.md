@@ -22,3 +22,6 @@
 ### 4-print_alphabt.c ###
 - Here its more or less the same as the code of 2-print_alphabet.c with the exception of letters e and q
 - Remember that since the letters being printed decreased, we have to lower the size of the array by 2
+
+### 5-print_numbers ###
+- Here we use the same logic of a while loop we used in 2-print_alphabet.c with the exception that we are just printing increment results up to a point like so
