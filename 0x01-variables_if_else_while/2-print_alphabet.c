@@ -9,9 +9,11 @@
 int main(void)
 {
 char *letters = "abcdefghijklmnopqrstuvwxyz";
-for (int i = 0; i < strlen(letters); i++)
+int i = 0;
+while (i < strlen(letters))
 {
 putchar("%c", letters[i]);
+i = i + 1;
 }
 putchar("\n");
 return (0);
