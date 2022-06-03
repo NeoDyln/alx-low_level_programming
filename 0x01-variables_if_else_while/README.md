@@ -26,3 +26,10 @@
 ### 5-print_numbers ###
 - Here we use the same logic of a while loop we used in 2-print_alphabet.c with the exception that we are just printing increment results up to a point like so.
 - As always, make sure your code is betty compliant
+
+### 6-print_numberz.c ###
+- Under normal functions like printf(), the answer here would have been a modification of 5 above
+- Since we are using putchar, it only reads characters if character values are given, else it reads values as ASCII.
+- In this case, int values are obviously non char values therefore putchar will read the i we're trying to output in its ASCII form
+- To rectify this, we have to go to the ASCII table, find the value we want to output and modify our putchar() so that the value we want displayed has its ASCII form in the putchar parentheses
+- 0 therefore has an ASCII form of 48 therefore since our first value of i is 0, we simply add 48 such that putchar reads putchar(48+i)
