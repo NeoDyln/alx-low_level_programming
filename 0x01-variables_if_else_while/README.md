@@ -33,3 +33,7 @@
 - In this case, int values are obviously non char values therefore putchar will read the i we're trying to output in its ASCII form
 - To rectify this, we have to go to the ASCII table, find the value we want to output and modify our putchar() so that the value we want displayed has its ASCII form in the putchar parentheses
 - 0 therefore has an ASCII form of 48 therefore since our first value of i is 0, we simply add 48 such that putchar reads putchar(48+i)
+
+### 7-print_tebahpla.c ###
+- Here we simply are asked to do what we did in 2-print_alphabet but from the last letter to the first.
+- All I did was edited the start index and changed the increment to a decrement
