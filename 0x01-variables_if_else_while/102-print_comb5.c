@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - Entry point 
+ *main - Entry point
  *
  *Description: A function to print all numbers between and including 0 to 99
  *Return: Always 0 (Success)
