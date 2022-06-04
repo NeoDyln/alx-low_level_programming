@@ -15,9 +15,9 @@ int c;
 int d;
 for (c = 0; c < sizeA; c++)
 {
+putchar(a[c]);
 for (d = 0; d < sizeB; d++)
 {
-putchar(a[c]);
 putchar(a[c]);
 putchar(' ');
 putchar(a[c]);
