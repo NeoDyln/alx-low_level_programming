@@ -10,11 +10,11 @@ int main(void)
 {
 char letters[27] = "abcdefghijklmnopqrstuvwxyz";
 size_t i = strlen(letters);
-while (i > 0)
+while (i != 47)
 {
 putchar(letters[i]);
 i = i - 1;
 }
-putchar("0\n");
+putchar('\n');
 return (0);
 }
