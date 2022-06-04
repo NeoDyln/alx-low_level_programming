@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-int i = 57;
-while (i != 47)
+int i = 122;
+while (i != 96)
 {
 putchar(i);
 i = i - 1;
