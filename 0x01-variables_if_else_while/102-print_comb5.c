@@ -7,30 +7,41 @@
  */
 int main(void)
 {
-int a[10] = {48,49,50,51,52,53,54,55,56,57};
-int sizeA = sizeof (a) / sizeof (a[0]);
-int c;
-int d;
-int e;
-int f;
-for (c = 0; c < sizeA; c++){
-for (d = 0; d < sizeA; d++)
+int i;
+int j;
+int k;
+int m;
+i = 48;
+while (i < 58)
 {
-for (e = 0; e < sizeA; e++)
+j = 48;
+while (j < 58)
 {
-for (f = 0; f < sizeA; f++)
+m = j + 1;
+k = i;
+while (k < 58)
 {
-putchar(a[c]);
-putchar(a[d]);
-putchar(' ');
-putchar(a[e]);
-putchar(a[f]);
+while (m < 58)
+{
+putchar(i);
+putchar(j);
+putchar(32);
+putchar(k);
+putchar(m);
+if (i < 57 || j < 56 || k < 57 || m < 57)
+{
 putchar(44);
-putchar(' ');
+putchar(32);
 }
+m++;
 }
+m = 48;
+k++;
 }
+j++;
 }
-putchar('\n');
+i++;
+}
+putchar(10);
 return (0);
 }
