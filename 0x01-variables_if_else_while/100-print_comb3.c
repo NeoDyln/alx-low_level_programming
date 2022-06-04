@@ -26,6 +26,7 @@ putchar(44);
 putchar(32);
 }
 }
+c = c + 1;
 }
 b = b + 1;
 a = a + 1;
