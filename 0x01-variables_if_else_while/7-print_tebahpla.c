@@ -8,11 +8,10 @@
  */
 int main(void)
 {
-char letters[27] = "abcdefghijklmnopqrstuvwxyz";
-size_t i = strlen(letters);
+int i = 57;
 while (i != 47)
 {
-putchar(letters[i]);
+putchar(i);
 i = i - 1;
 }
 putchar('\n');
