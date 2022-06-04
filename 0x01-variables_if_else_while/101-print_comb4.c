@@ -22,12 +22,10 @@ if (a != b && a != c && b < c && a < b)
 putchar(a);
 putchar(b);
 putchar(c);
-/**
- *if (a == 7)
- *{
- *break;
- *}
- */
+if (a == 7)
+{
+break;
+}
 if (!(a == 55 && b == 56 && c == 57))
 {
 putchar(44);
