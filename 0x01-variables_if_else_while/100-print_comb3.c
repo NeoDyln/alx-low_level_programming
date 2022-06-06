@@ -8,28 +8,28 @@
  */
 int main(void)
 {
-int a = 48;
-int b = 48;
-int c;
-while (b < 58)
+int dig2res = 48;
+int dig1 = 48;
+int dig2;
+while (dig1 < 58)
 {
-c = a;
-while (c < 58)
+dig2 = a;
+while (dig2 < 58)
 {
-if (b != c)
+if (dig1 != dig2)
 {
-putchar(b);
-putchar(c);
-if (!(b == 56 && c == 57))
+putchar(dig1);
+putchar(dig2);
+if (!(dig1 == 56 && dig2 == 57))
 {
 putchar(44);
 putchar(32);
 }
 }
-c = c + 1;
+dig2 = dig2 + 1;
 }
-b = b + 1;
-a = a + 1;
+dig1 = dig1 + 1;
+dig2res = dig2res + 1;
 }
 putchar('\n');
 return (0);
