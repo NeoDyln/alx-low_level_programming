@@ -62,3 +62,9 @@
   - At this point we've looped through 0-9 for digit 2 and digit 2 has incremented beyond 9 in ASCII (i.e to 58)
   - We thus increment the values of both digit 1 and the resetter for digit 2 and start over the process
 - You will notice it will automatically exclude digits whose numbers match or their combinations have been used before
+
+### 101-print_comb4.c ###
+- This is more or less what I did in 100-prit_comb.c but with an extra loop.
+- For understanding, the innermost loop has a few if loops as below
+- if loop 1 checks for duplicate values whether { { The first digit is unequal to the second digit} and {the first digit is unequal to the third digit} and {second digit is less than third} and {first is less than second}}
+- if loop 2 checks whether the last value has been reached and if not, adds a comma and space
