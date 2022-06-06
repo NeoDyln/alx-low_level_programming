@@ -22,10 +22,6 @@ if (dig1 != dig2 && dig1 != dig3 && dig2 < dig3 && dig1 < dig2)
 putchar(dig1);
 putchar(dig2);
 putchar(dig3);
-if (dig1 == 7)
-{
-break;
-}
 if (!(dig1 == 55 && dig2 == 56 && dig3 == 57))
 {
 putchar(44);
