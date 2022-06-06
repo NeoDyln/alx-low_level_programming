@@ -13,7 +13,7 @@ int dig1 = 48;
 int dig2;
 while (dig1 < 58)
 {
-dig2 = a;
+dig2 = dig2res;
 while (dig2 < 58)
 {
 if (dig1 != dig2)
