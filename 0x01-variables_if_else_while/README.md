@@ -37,3 +37,28 @@
 ### 7-print_tebahpla.c ###
 - Here we simply are asked to do what we did in 2-print_alphabet but from the last letter to the first.
 - All I did was edited the start index and changed the increment to a decrement
+- Remember we are still usig ASCII values hence the reason why I print from 97-103
+
+### 8-print_base16.c ###
+- Here we are asked to output the hexadecimal numbers that exist. i.e (0 -15) but in hexadecimal form
+- 0-9 are shown as they are but from 10-15, we have to use letters hence why 48-58 is ASCII for numbers 0-9 while 97-103 is ascii for a-f
+
+### 9-print_comb.c ###
+- Here we are asked to output all possible combinations of single digit numbers...in short, all single numbers.
+- Each number is separated by a comma and space whose ASCII values are 44 and 32 respectively
+- We thus loop through the ASCII values of 0-9, printing the value together with a comma and space up until the second last value hence the if (i < 57) loop
+
+## Advanced Tasks ##
+### 100-print_comb3.c ###
+- Here we are asked to print all possible combinations of two digit numbers such that each digit should be different from the other, should start from the lowest to highest number and should be separated by a space and comma
+- We use three variables, one to reset the second value's start point, one to mark the value of the first digit and one for the actual second digit to print.
+- We initialize the resetter and digit one to be 0 
+- We first loop through 0 - 9 in digit 1. 
+  - For every loop in digit1, we make digit 2 take the value of the resetter and start a new loop for digit 2.
+    - In the loop for digit 2 from 0(48) - 9(57), we check first if digit 1 == digit 2
+    - If equal, we skip that operation and increment the value of digit 2 by one.
+    - If unequal, we print digit 1 followed by digit 2. 
+    - Then we check again if digit 1 isn't 8 and digit 2 isnt 9...simply to say our current value shouldn't be 89 since it is out last value. If true, we add a comma and space. If it was 89, we simply don't addd a comma and space as it is the last point of the function.
+  - At this point we've looped through 0-9 for digit 2 and digit 2 has incremented beyond 9 in ASCII (i.e to 58)
+  - We thus increment the values of both digit 1 and the resetter for digit 2 and start over the process
+- You will notice it will automatically exclude digits whose numbers match or their combinations have been used before
