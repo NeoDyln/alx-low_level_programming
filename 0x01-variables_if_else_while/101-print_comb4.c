@@ -8,30 +8,35 @@
  */
 int main(void)
 {
-int a = 48;
-int b = 48;
-int c = 48;
-for (a = 48; a < 58; a++)
+int dig1 = 48;
+int dig2 = 48;
+int dig3 = 48;
+for (dig1 = 48; dig1 < 58; dig1++)
 {
-for (b = 48; b < 58; b++)
+for (dig2 = 48; dig2 < 58; dig2++)
 {
-for (c = 48; c < 58; c++)
+for (dig3 = 48; dig3 < 58; dig3++)
 {
-if (a != b && a != c && b < c && a < b)
+if (dig1 != dig2 && dig1 != dig3 && dig2 < dig3 && dig1 < dig2)
 {
-putchar(a);
-putchar(b);
-putchar(c);
-if (a == 7)
+putchar(dig1);
+putchar(dig2);
+putchar(dig3);
+if (dig1 == 7)
 {
 break;
 }
-if (!(a == 55 && b == 56 && c == 57))
+if (!(dig1 == 55 && dig2 == 56 && dig3 == 57))
 {
 putchar(44);
 putchar(32);
 }
 }
+}
+}
+}
+putchar('\n');
+return (0);
 }
 }
 }
