@@ -41,7 +41,3 @@ printf("%d", startPoint);
 }
 printf("\n");
 }
-}
-}
-printf("\n");
-}
