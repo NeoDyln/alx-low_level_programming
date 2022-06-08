@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit - Entry point returns last digit in number
+ * print_last_digit - Entry point returns last digit of num passed
  *@curNum: Cotains current number
  * Return: Always last digit
  */

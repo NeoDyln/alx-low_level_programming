@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_sign - prints the sign of a number
- *@curSign: Contains num representation of letter
+ * print_sign - prints an operand sign
+ *@curSign: Contains num representation of sign
  * Return: 1 if n is > zero, 0 if n is zero, -1 if n is < zero
  */
 int print_sign(int curSign)

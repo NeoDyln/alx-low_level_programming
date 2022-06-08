@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - returns 1 if lowercase alphabet and 0 otherwise
+ * _islower - returns 1 if lowercase alphabet and 0 if not
  * @curLetter: Contains the current letter
  * Return: 0 for uppercase, 1 for lowercase
  */
