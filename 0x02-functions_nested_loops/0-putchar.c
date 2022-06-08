@@ -9,9 +9,10 @@
 int main()
 {
 char st[9] = "_putchar";
-for (int indexCounter = 0; indexCounter < 8; indexCounter++)
+while (indexCounter < 8)
 {
 _putchar(st[indexCounter]);
+indexCounter++;
 }
 _putchar('\n');
 return (0);
