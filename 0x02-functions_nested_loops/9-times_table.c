@@ -38,5 +38,4 @@ num2++;
 num1++;
 _putchar('\n');
 }
-return (0);
 }
