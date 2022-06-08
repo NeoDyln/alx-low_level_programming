@@ -6,7 +6,7 @@
 void print_alphabet(void)
 {
 char curLetter;
-for (curLetter = 'a'; curLetter <= 'z'; c++)
-_putchar(c);
+for (curLetter = 'a'; curLetter <= 'z'; curLetter++)
+_putchar(curLetter);
 _putchar('\n');
 }
