@@ -7,6 +7,6 @@ int _islower(int curLetter);
 int _isalpha(int curLet);
 int print_sign(int curSign);
 int _abs(int curVal);
-int print_last_digit(int);
+int print_last_digit(int curNum);
 void jack_bauer(void);
 #endif
