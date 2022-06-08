@@ -17,7 +17,7 @@ for (startPoint = curNum; startPoint > 97; startPoint--)
 if (startPoint > 9)
 {
 _putchar(startPoint / 10 + '0');
-_putchar(startPoit % 10 + '0');
+_putchar(startPoint % 10 + '0');
 }
 else
 _putchar(startPoint + '0');
