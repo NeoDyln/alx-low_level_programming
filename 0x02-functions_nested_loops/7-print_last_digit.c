@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_last_digit - Entry point returns last digit in number
- * 
+ *
  * Return: Always last digit
  */
 int print_last_digit(int curNum)
