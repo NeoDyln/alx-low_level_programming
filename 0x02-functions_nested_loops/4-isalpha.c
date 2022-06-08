@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - checks for alphabetic character
- *
+ *@curLetter: COntains current letter
  * Return: 1 if letter, lowercase, uppercase; 0 for otherwise
  */
 int _isalpha(int curLetter)
