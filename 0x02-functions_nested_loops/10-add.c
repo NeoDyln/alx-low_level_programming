@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * add - Entry point
+ * add - Entry point and does a sum function
  * @num1: Enters first number
  * @num2: Enters second number
  *
