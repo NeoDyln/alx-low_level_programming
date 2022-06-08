@@ -15,24 +15,28 @@ if (curNum > 98)
 {
 for (startPoint = curNum; startPoint > 97; startPoint--)
 {
-printf("%d", startPoint);
 if (startPoint != 98)
 {
+printf("%d", startPoint);
 _putchar(',');
 _putchar(' ');
 }
+else if (startPoint == 98)
+printf("%d", startPoint);
 }
 }
 else if (curNum < 98)
 {
 for (startPoint = curNum; startPoint < 99; startPoint++)
 {
-printf("%d", startPoint);
 if (startPoint != 98)
 {
+printf("%d", startPoint)
 _putchar(',');
 _putchar(' ');
 }
+else if (startPoint == 98)
+printf("%d", startPoint);
 }
 }
 _putchar('\n');
