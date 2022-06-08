@@ -22,6 +22,8 @@ if (startPoint != 98)
 printf("%d", startPoint);
 printf(", ");
 }
+else
+printf("%d", startPoint);
 }
 }
 else if (curNum < 98)
@@ -32,6 +34,12 @@ if (startPoint != 98)
 {
 printf("%d", startPoint);
 printf(", ");
+}
+else
+printf("%d", startPoint);
+}
+}
+printf("\n");
 }
 }
 }
