@@ -3,10 +3,10 @@
 #include "main.h"
 /**
  * main - Entry Point
- * 
+ *
  * Return: Always 0 (Success)
  **/
-int main()
+int main(void)
 {
 char st[9] = "_putchar";
 int indexCounter = 0;
