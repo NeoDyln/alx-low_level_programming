@@ -11,7 +11,7 @@ char curLetter;
 for (loopCounter = 0; loopCounter < 10; loopCounter++)
 {
 for (curLetter = 'a'; curLetter <= 'z'; curLetter++)
-_putchar(c);
+_putchar(curLetter);
 _putchar('\n');
 }
 }
