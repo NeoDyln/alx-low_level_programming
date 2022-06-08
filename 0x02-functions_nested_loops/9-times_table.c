@@ -15,28 +15,28 @@ while (num2 < 10)
 int prod = num1 * num2;
 if (num1 == 0)
 {
-putchar(prod + '0');
+_putchar(prod + '0');
 }
 else if (num2 >= 10)
 {
-putchar(',');
-putchar(' ');
-putchar(' ');
-putchar(prod / 10 + '0');
-putchar(prod % 10 + '0');
-putchar('\n');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(prod / 10 + '0');
+_putchar(prod % 10 + '0');
+_putchar('\n');
 }
 else if (num2 <= 10)
 {
-putchar(',');
-putchar(' ');
-putchar(' ');
-putchar(prod + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(prod + '0');
 }
 num2++;
 }
 num1++;
-putchar('\n');
+_putchar('\n');
 }
 return (0);
 }
