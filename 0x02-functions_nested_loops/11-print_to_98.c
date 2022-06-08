@@ -10,6 +10,8 @@
 void print_to_98(int curNum)
 {
 int startPoint = curNum;
+if (curNum == 98)
+_putchar(startPoint + '0');
 if (curNum > 98)
 {
 for (startPoint = curNum; startPoint > 97; startPoint--)
@@ -46,4 +48,5 @@ _putchar(' ');
 }
 }
 }
+_putchar('\n');
 }
