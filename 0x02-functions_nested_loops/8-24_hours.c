@@ -12,7 +12,7 @@ for (hourCt = 0; hourCt < 24; hourCt++)
 {
 for (minCt = 0; minCt < 60; minCt++)
 {
-_putchar(hiurCt / 10 + '0');
+_putchar(hourCt / 10 + '0');
 _putchar(hourCt % 10 + '0');
 _putchar(':');
 _putchar(minCt / 10 + '0');
