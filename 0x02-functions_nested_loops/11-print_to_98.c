@@ -3,7 +3,7 @@
 /**
  *print_to_98 - Entry point
  *Description: Prints all values between and including current number to 98
- *for both numbers below 98 and above
+ *for both numbers below 98 and above. Just remember to add a check for 98 
  *@curNum: ENters current number provided to function
  *
  *Return: void
