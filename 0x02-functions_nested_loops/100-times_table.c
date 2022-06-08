@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *print_times_table - 
+ *print_times_table - Given a num, it creates a multiplication table upto num
  *@n: multiplication level
  * 
  * Return: Void
