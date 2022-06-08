@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - prints the sign of a number
- *
+ *@signCheck: Contains num representation of letter
  * Return: 1 if n is > zero, 0 if n is zero, -1 if n is < zero
  */
 int print_sign(int signCheck)
