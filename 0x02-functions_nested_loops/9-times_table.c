@@ -28,6 +28,7 @@ else if (prod <= 9)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 _putchar(prod + '0');
 }
 }
