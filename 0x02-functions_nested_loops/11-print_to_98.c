@@ -9,13 +9,18 @@
  */
 void print_to_98(int curNum)
 {
-int startPoint = curNum;
 if (curNum > 98)
 {
-for (startPoint = curNum; startPoint > 97; startPoint--)
+for (int startPoint = curNum; startPoint > 97; startPoint--)
 {
+if (startPoint > 9)
+{
+_putchar(startPoint / 10 + '0');
+_putchar(startPoit % 10 + '0');
+}
+else
 _putchar(startPoint + '0');
-while (startPoint != 98)
+if (startPoint != 98)
 {
 _putchar(',');
 _putchar(' ');
@@ -24,10 +29,16 @@ _putchar(' ');
 }
 else if (curNum < 98)
 {
-for (startPoint = curNum; startPoint < 99; startPoint++)
+for (int startPoint = curNum; startPoint < 99; startPoint++)
 {
+if (startPoint > 9)
+{
+_putchar(startPoint / 10 + '0');
+_putchar(startPoint % 10 + '0');
+}
+else
 _putchar(startPoint + '0');
-while (startPoint != 98)
+if (startPoint != 98)
 {
 _putchar(',');
 _putchar(' ');
