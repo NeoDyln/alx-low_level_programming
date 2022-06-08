@@ -20,8 +20,7 @@ for (startPoint = curNum; startPoint > 97; startPoint--)
 if (startPoint != 98)
 {
 printf("%d", startPoint);
-_putchar(',');
-_putchar(' ');
+printf(", ");
 }
 }
 }
@@ -32,10 +31,9 @@ for (startPoint = curNum; startPoint < 99; startPoint++)
 if (startPoint != 98)
 {
 printf("%d", startPoint);
-_putchar(',');
-_putchar(' ');
+printf(", ");
 }
 }
 }
-_putchar('\n');
+printf("\n");
 }
