@@ -9,9 +9,10 @@
  */
 void print_to_98(int curNum)
 {
+int startPoint = curNum;
 if (curNum > 98)
 {
-for (int startPoint = curNum; startPoint > 97; startPoint--)
+for (startPoint = curNum; startPoint > 97; startPoint--)
 {
 if (startPoint > 9)
 {
@@ -29,7 +30,7 @@ _putchar(' ');
 }
 else if (curNum < 98)
 {
-for (int startPoint = curNum; startPoint < 99; startPoint++)
+for (startPoint = curNum; startPoint < 99; startPoint++)
 {
 if (startPoint > 9)
 {
