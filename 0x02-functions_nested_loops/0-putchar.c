@@ -13,6 +13,6 @@ for(int indexCounter = 0; indexCounter < 8; indexCounter++)
 {
 _putchar(st[indexCounter]);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
