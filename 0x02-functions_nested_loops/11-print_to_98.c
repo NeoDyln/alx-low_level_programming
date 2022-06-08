@@ -31,7 +31,7 @@ for (startPoint = curNum; startPoint < 99; startPoint++)
 {
 if (startPoint != 98)
 {
-printf("%d", startPoint)
+printf("%d", startPoint);
 _putchar(',');
 _putchar(' ');
 }
