@@ -11,6 +11,8 @@
 void print_to_98(int curNum)
 {
 int startPoint = curNum;
+if (startPoint == 98)
+printf("%d", curNum);
 if (curNum > 98)
 {
 for (startPoint = curNum; startPoint > 97; startPoint--)
@@ -21,8 +23,6 @@ printf("%d", startPoint);
 _putchar(',');
 _putchar(' ');
 }
-else if (startPoint == 98)
-printf("%d", startPoint);
 }
 }
 else if (curNum < 98)
@@ -35,8 +35,6 @@ printf("%d", startPoint);
 _putchar(',');
 _putchar(' ');
 }
-else if (startPoint == 98)
-printf("%d", startPoint);
 }
 }
 _putchar('\n');
