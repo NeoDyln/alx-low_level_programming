@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - 
+ * main - 98 fibonacci nums
  *
  * Return: 0
  */
