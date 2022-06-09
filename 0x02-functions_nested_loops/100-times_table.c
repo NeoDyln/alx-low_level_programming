@@ -9,6 +9,8 @@
 void print_times_table(int n)
 {
 int num1, num2 = 0;
+if (!(n > 15 || n < 0))
+{
 for (num1 = 0; num1 < n + 1; num1++)
 {
 for (num2 = 0; num2 < n + 1; num2++)
@@ -37,5 +39,6 @@ printf("%d", prod % 10);
 }
 }
 printf("\n");
+}
 }
 }
