@@ -9,7 +9,7 @@ int main(void)
 long num1 = 1;
 long num2 = 2;
 long sumFib;
-printf("%d, %d", num1, num2);
+printf("1, 2");
 while (sumFib < 20365011073)
 {
 sumFib = num1 + num2;
