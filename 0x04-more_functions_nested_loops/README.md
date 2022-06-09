@@ -24,4 +24,7 @@
 
 ### 4-print_most_numbers.c ###
 - This function does the same as the above, with the exception that it excludes 2 and 4
+- Remember to add its prototype in main.h
 
+### 5-more_numbers.c ###
+- Prints the numbers 0-14 ten times each time in a new line
