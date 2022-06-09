@@ -13,3 +13,7 @@
 ### 1-isdigit.c ###
 - This file, like the isalpha file above, will compare the provided value to its counterpart ASCII values of 0-9
 - If a match is found, a value 1 is returned else by default, 0 is returned
+
+### 2-mul.c ###
+- This function should return the product of two integers passed
+- Returns the product as its return value
