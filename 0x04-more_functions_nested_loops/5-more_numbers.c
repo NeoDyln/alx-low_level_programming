@@ -17,7 +17,8 @@ if (numCur > 9)
 {
 _putchar('1');
 }
-_putchar(curNum % 10);
+int valM = curNum % 10;
+_putchar(valM + '0');
 }
 _putchar('\n');
 }
