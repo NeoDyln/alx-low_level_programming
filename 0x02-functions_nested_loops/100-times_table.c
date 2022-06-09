@@ -32,8 +32,7 @@ printf("%d", prod % 10);
 else if (prod >= 100)
 {
 printf(", ");
-printf("%d", prod / 100);
-printf("%d", prod % 10);
+printf("%d", prod / 10);
 printf("%d", prod % 10);
 }
 }
