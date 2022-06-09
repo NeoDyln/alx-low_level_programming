@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Shows the first 98 Fibonacci 
+ * main - Shows the first 98 Fibonacci nums
  * Return: ALways 0 (Success)
  */
 int main(void)
