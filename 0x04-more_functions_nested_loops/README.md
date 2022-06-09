@@ -17,3 +17,7 @@
 ### 2-mul.c ###
 - This function should return the product of two integers passed
 - Returns the product as its return value
+
+### 3-print_numbers.c ###
+- This function prints all numbers 0-9 through a for loop and the _putchar function as defined in main.h
+- The second and final _putchar wil output a breakline 
