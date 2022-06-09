@@ -24,7 +24,7 @@ printf("%lu, ", num2);
 numNxtTrack = num2;
 num2 += num1;
 num1 = numNxtTrack;
-count++;
+numNxtTrack++;
 }
 return (0);
 }
