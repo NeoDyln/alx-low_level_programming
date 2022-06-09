@@ -13,9 +13,12 @@ for (counter = 0; counter < 10; counter++)
 {
 for (numCur = 0; numCur < 15; numCur++)
 {
-_putchar(numCur);
+if (numCur > 9)
+{
+_putchar('1');
+}
+_putchar(curNum % 10);
 }
 _putchar('\n');
 }
-_putchar('\n');
 }
