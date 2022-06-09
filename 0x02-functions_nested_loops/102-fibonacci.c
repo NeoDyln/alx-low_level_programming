@@ -1,30 +1,22 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Outputs first 50 fibonacci numbers starting with 1 and 2.
+ * main -  Shows first 50 Fibonacci numbers start end
+ * @void: no argument
  * Return: 0
  */
 int main(void)
 {
-int fibCt = 2;
-long int num1 = 1;
-long int num2 = 2;
-long int numNxtTrack;
-printf("%lu, ", num1);
-while (fibCt <= 50)
+long num1 = 1;
+long num2 = 2; 
+long sumFib;
+printf("%d, %d", num1, num2);
+while (sumFib < 20365011073)
 {
-if (fibCt == 50)
-{
-printf("%lu\n", num2);
+sumFib = num1 + num2;
+printf(", %lu", sumFib);
+num1 = num2;
+num2 = sumFib;
 }
-else
-{
-printf("%lu, ", num2);
-}
-numNxtTrack = num2;
-num2 += num1;
-num1 = numNxtTrack;
-numNxtTrack++;
-}
+printf("\n");
 return (0);
 }
