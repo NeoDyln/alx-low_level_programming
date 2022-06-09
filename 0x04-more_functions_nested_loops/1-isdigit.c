@@ -18,4 +18,5 @@ checker = 1;
 break;
 }
 }
+return (checker);
 }
