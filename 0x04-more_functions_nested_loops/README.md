@@ -20,4 +20,8 @@
 
 ### 3-print_numbers.c ###
 - This function prints all numbers 0-9 through a for loop and the _putchar function as defined in main.h
-- The second and final _putchar wil output a breakline 
+- The second and final _putchar wil output a breakline
+
+### 4-print_most_numbers.c ###
+- This function does the same as the above, with the exception that it excludes 2 and 4
+
