@@ -2,7 +2,6 @@
 
 /**
  *print_most_numbers - Prints numbers from 0 -9
- *
  *Return: void
  */
 
@@ -13,7 +12,6 @@ for (curNum = 48; curNum < 58; curNum++)
 {
 if (curNum == 50 || curNum == 52)
 {
-continue;
 }
 else
 {
