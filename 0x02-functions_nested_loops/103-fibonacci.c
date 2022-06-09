@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main - main block
- * Description: Print the sum of even Fibonacci numbers up to a fib value
- * not exceeding 4,000,000.
+ * main - Entry point
+ * Description: Sums even Fibonacci numbers between 1 and 4000000
  * Return: 0
  */
 int main(void)
