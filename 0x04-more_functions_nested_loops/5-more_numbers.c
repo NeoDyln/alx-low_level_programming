@@ -8,7 +8,7 @@
 
 void more_numbers(void)
 {
-int counter, numCur, dig1, dig2;
+int counter, numCur;
 for (counter = 0; counter < 10; counter++)
 {
 for (numCur = 48; numCur < 63; numCur++)
