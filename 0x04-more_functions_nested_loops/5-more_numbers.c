@@ -8,13 +8,13 @@
 
 void more_numbers(void)
 {
-int counter, numCur;
+int counter, numCur, dig1, dig2;
 for (counter = 0; counter < 10; counter++)
 {
 for (numCur = 48; numCur < 63; numCur++)
 {
 int numRes = numCur;
-if (numCur > 9)
+if (numCur > 57)
 {
 _putchar(49);
 numRes = numRes - 10;
