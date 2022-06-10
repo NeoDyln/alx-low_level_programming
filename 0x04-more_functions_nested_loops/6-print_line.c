@@ -1,26 +1,17 @@
 #include "main.h"
 /**
  * print_line - draws a straight line
- *@n: size of line
+ *@n: size of lin
  * Return: Always 0.
  */
 void print_line(int n)
 {
-int i;
+	int i = 0;
 
-if (n > 0)
-{
-for (i = 0; i < n; i++)
-{
-_putchar(95);
-}
-
-_putchar('\n');
-}
-
-else
-{
-_putchar('\n');
-}
-
+	if (n > 0)
+	{
+		for (; i < n; i++)
+			_putchar('_');
+	}
+	_putchar('\n');
 }
