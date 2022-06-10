@@ -7,41 +7,20 @@
 
 int main(void)
 {
+	int i = 1;
 
-int count = 100;
-int i;
+	for (; i < 100 ; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
+		else
+			printf("%d ", i);
+	}
+	printf("Buzz\n");
 
-i = 1;
-while (i <= count)
-{
-if (i % 3 == 0 && i % 5 == 0)
-{
-printf("FizzBuzz ");
-}
-
-else if (i % 3 == 0 && i % 5 != 0)
-{
-printf("Fizz ");
-}
-
-else if (i % 5 == 0 && i % 3 != 0)
-{
-if (i < count)
-printf("Buzz ");
-
-else
-printf("Buzz");
-}
-
-else
-{
-printf("%i ", i);
-}
-
-i++;
-
-
-}
-printf("\n");
-return (0);
+	return (0);
 }
