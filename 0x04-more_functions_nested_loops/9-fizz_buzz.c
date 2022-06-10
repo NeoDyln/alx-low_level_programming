@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Description: multiples of 3, print fizz, of 5, buzz, of both 
+ * Description: multiples of 3, print fizz, of 5, buzz, of both FizzBuzz
  * Return: void
  */
 
