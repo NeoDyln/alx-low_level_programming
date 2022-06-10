@@ -15,10 +15,10 @@ for (numCur = 0; numCur < 15; numCur++)
 {
 if (numCur > 9)
 {
-_putchar('1');
+_putchar(49);
 }
 int valM = curNum % 10;
-_putchar(valM + '0');
+_putchar(valM);
 }
 _putchar('\n');
 }
