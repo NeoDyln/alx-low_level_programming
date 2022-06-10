@@ -16,10 +16,10 @@ for (hor = 0; hor < n; hor++)
 {
 for (ver = 0; ver < i; ver++)
 {
-_putchar (' ');
+_putchar(' ');
 }
-_putchar (92);
-_putchar ('\n');
+_putchar(92);
+_putchar('\n');
 
 }
 
@@ -28,7 +28,7 @@ _putchar ('\n');
 
 else
 {
-_putchar ('\n');
+_putchar('\n');
 }
 
 }
