@@ -28,3 +28,4 @@
 
 ### 5-more_numbers.c ###
 - Prints the numbers 0-14 ten times each time in a new line
+- Basically I set the function to always print a copy of the loop value with the exception that when it gets to greater than 9, a forced 1 will be printed followed by the (copy - 10) 
