@@ -18,7 +18,10 @@ if (curPrime % primeL == 0)
 {
 curPrime = curPrime / primeL;
 }
+else
+{
 primeL++;
+}
 }
 printf("%li\n", curPrime);
 return (0);
