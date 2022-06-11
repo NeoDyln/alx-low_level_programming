@@ -3,32 +3,34 @@
 /**
  *print_number - Prints an integer
  *@n: number to be printed
- *Return: Void
+ *Return: Voi
  */
 
 void print_number(int n)
 {
-int dig1, dig2, dig3;
-if (n < 0)
-{
-n *= -1;
-_putchar(45);
-}
-if (n / 1000 > 0)
-{
-dig1 = n / 1000;
-_putchar(dig1 + '/');
-}
-if (n / 100 > 0)
-{
-dig2 = n / 100;
-_putchar(dig2 + '/');
-}
-if (n / 10 > 0)
-{
-dig3 = n / 10;
-_putchar(dig3 + '/');
-}
-_putchar(n % 10 + '/');
-_putchar('\n');
+	unsigned int m, d, count;
+
+	if (n < 0)
+	{
+		_putchar(45);
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
+	}
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }
