@@ -8,21 +8,23 @@
 
 int main(void)
 {
-long int numCheck, curPrime, primeL;
-numCheck = 61285475143;
-curPrime = numCheck;
-primeL = 2;
-while (primeL != curPrime)
-{
-if (curPrime % primeL == 0)
-{
-curPrime = curPrime / primeL;
-}
-else
-{
-primeL++;
-}
-}
-printf("%li\n", curPrime);
-return (0);
+	long int prime = 612852475143;
+	long int quotient = prime;
+	long int divisor = 2;
+
+	while (quotient != divisor)
+	{
+		if (quotient % divisor == 0)
+		{
+			quotient = quotient / divisor;
+		}
+		else
+		{
+			divisor++;
+		}
+	}
+
+	printf("%li\n", quotient);
+
+	return (0);
 }
