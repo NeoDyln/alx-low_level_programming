@@ -16,5 +16,8 @@
 
 ### 2-strlen.c
 - This function mimics the strlen function (You can 'man strlen' to know how it works) and simply returns the length of the char array passed without the \0 character. Remember any array usually has that \0 as a marker for the end of the array
-- It also needs the string.h library so be sure to import in main.h
+- It somply loops through the characters counting until before \0
 
+### 3-puts.c
+- This function prints a string followed by a new line
+- It makes use of the _putchar function
