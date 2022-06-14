@@ -17,7 +17,8 @@ int lenSR = 0;
 for (lenSR = 0; lenSR <= lenS; lenSR++)
 {
 sR = s[lenS - 1 - lenSR];
-s [lenS - 1 - lenSR] = s[lenSR];
-s[lenSR] = sR;
+ s [lenS - 1 - lenSR] = s[];
+s[l] = sR;
 }
+
 }
