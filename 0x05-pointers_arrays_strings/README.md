@@ -21,3 +21,6 @@
 ### 3-puts.c
 - This function prints a string followed by a new line
 - It makes use of the _putchar function
+
+### 4-print_rev
+- Works by printing all string chars but from last to start. You'll have to first get the length of the string tho
