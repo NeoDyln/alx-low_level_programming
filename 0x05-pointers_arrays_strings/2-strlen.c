@@ -9,6 +9,6 @@
 
 int _strlen(char *s)
 {
-int lenS = size_t strlen(const char *s);
+int lenS = size_t strlen(*s);
 return (lenS);
 }
