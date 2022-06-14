@@ -12,10 +12,15 @@ while (s[lenS] != '\0')
 {
 lenS++;
 }
-char sR = s;
+char sR[lenS];
 int lenSR = 0;
-for (lenSR = 0; lenSR != lenS; lenSR++)
+for (lenSR = 0; lenSR <= lenS; lenSR++)
 {
-s[lenSR] = s[lenS - 1 - lenSR];
+sR[lenSR] = s[lenS];
+}
+int finLoop = 0;
+for (finLoop = 0; finLoop < lenS; finLoop++)
+{
+s[finLoop] = sR[lenS - 1 - finLoop];
 }
 }
