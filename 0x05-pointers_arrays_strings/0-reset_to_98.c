@@ -2,7 +2,7 @@
 
 /**
  *reset_to_98 - Takes a pointer and resets its value to 98
- *@*n: Pointer beig passed
+ *@n: Pointer beig passed
  *
  *Return: Void
  */
