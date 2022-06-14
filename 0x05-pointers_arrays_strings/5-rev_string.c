@@ -5,19 +5,24 @@
  * @s: an input string
  * Return: Nothing
  */
+
 void rev_string(char *s)
 {
 int lenS = 0;
 while (s[lenS] != '\0')
 {
-lenS++;
+lenS++
 }
-char sR;
-int lenSR = 0;
-for (lenSR = 0; lenSR <= lenS; lenSR++)
+char tempC[lenS];
+int lenR = 0;
+for (lenR = 0; lenR < lenS; lenR++)
 {
-sR = s[lenS - 1 - lenSR];
-s [lenS - 1 - lenSR] = s[lenSR];
-s[lenSR] = sR;
+tempC[lenR] = s[lenS - (1 + lenR)]
+}
+int loopFin = 0;
+while(loopFin < lenS)
+{
+s[loopFin] = tempC[loopFin];
+loopFin++;
 }
 }
