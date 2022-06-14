@@ -12,12 +12,10 @@ while (s[lenS] != '\0')
 {
 lenS++;
 }
-char sR[lenS];
-char *psR = &sR;
+char sR = s;
 int lenSR = 0;
-for (lenSR = 0; lenSR < lenS; lenSR++)
+for (lenSR = 0; lenSR != lenS; lenSR++)
 {
-sR[lenSR] = s[lenS - 1 - lenSR];
+s[lenSR] = s[lenS - 1 - lenSR];
 }
-*s = *psR;
 }
