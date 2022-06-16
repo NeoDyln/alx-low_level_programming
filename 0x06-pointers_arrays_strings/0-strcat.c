@@ -11,6 +11,8 @@
 
 char *_strcat(char *dest, char *src)
 {
+/* This acts as a counter for the src appending  */
+int srcU = 0;
 /* This counts the number of chars in dest array  */
 int destC = strlen(dest);
 /* This counts the number of chars in src array  */
@@ -24,9 +26,10 @@ int srcC = strlen(src);
  * We'll also initialize a new variable to help
  * track the count
  */
-for (int srcU = 0; srcU < srcC && src[srcU] != '\0'; srcU++)
+while (srcU < srcC && src[srcU] != '\0')
 {
 dest[destC + srcU] = src[srcU];
+srcU++;
 }
 dest[destC + srcU] = '\0';
 return (dest);
