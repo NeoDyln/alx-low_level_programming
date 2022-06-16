@@ -25,5 +25,5 @@ for (;srcU < srcC && src[srcU] != '\0'; srcU++)
 dest[destC + srcU] = src[srcU];
 }
 dest[destC + srcU] = '\0';
-return src;
+return (dest);
 }
