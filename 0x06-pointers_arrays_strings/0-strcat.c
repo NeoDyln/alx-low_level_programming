@@ -9,26 +9,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-int destC, srcC, srcU = 0;
-while (dest[destC] != '\0')
-{
-destC++;
-}
-/* Here we count the number of chars in src inclusive of the \0  */
-while (src[srcC] != '\0')
-{
-srcC++;
-}
+/* This counts the number of chars in dest array  */
+int destC = strlen(dest);
+/* This counts the number of chars in src array  */
+int srcC = strlen(src);
+/* This acts as a loop count for the addition of chars to dest from src until before the \0  */
+int srcU = 0;
 /**
  * Now we loop through the values of the src array adding each character to the dest array  
  * We'll also initialize a new variable to help track the count
  */
 
-while (srcU < srcC && src[srcU] != '\0')
+for (;srcU < srcC && src[srcU] != '\0'; srcU++)
 {
 dest[destC + srcU] = src[srcU];
 }
-destC = destC + srcU;
-dest[destC] = '\0';
-return dest;
+dest[destC + srcU] = '\0';
+return src;
 }
