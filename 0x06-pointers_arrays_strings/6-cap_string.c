@@ -12,10 +12,10 @@
 
 char *cap_string(char *c)
 {
-	char check[14] = {44,59,46,33,63,34,40,41,123,125,'\0'};
+	char check[14] = {32,'\t','\n',44,59,46,33,63,34,40,41,123,125,'\0'};
 	int lenC = strlen(c);
 
-	int x,y = 0;
+	int x,y,z = 0;
 
 	for (x = 0; x < lenC; x++)
 	{
@@ -23,9 +23,17 @@ char *cap_string(char *c)
 		{
 			if (c[x] == check[y])
 			{
-				c[x + 1] -= 32; 
+				for (z = 0; check[z] != '\0'; z++)
+				{
+					if (c[x + 1] == check[z])
+						c[x + 2] = c[x + 2] - 32;
+					if (c[x + 1] != check[z] && c[x + 1] == '0')
+						continue;
+					if (c[x + 1] != check[z] && c[x + 1] != '0')
+						c[x + 1] = c[x + 1] - 32;
+				}
 			}
-			else
+			if (c[x] == '0')
 				continue;
 		}
 	}
