@@ -27,4 +27,21 @@
 
 ### 4-rev_array.c
 - Here I first took the number of elements, subtracted 1 and checked if the result, when divided by 2, returns a remainder of 0
-- If it returns 0, it means there is an equal number of elements excluding the \0 therefore I can be taking a copy of the element at index x, put it aside, substitute index x with index last - 1... to remove the \0 ... and then return the copied index x to index last - 1. I'll do this loop for (n - 1) / 2 since if there was a remainder after that division... which the remainder can only result to 1 in such a case...then it would mean that value would be at the dead center of the array so even when reversed, position is maintained 
+- If it returns 0, it means there is an equal number of elements excluding the \0 therefore I can be taking a copy of the element at index x, put it aside, substitute index x with index last - 1... to remove the \0 ... and then return the copied index x to index last - 1. I'll do this loop for (n - 1) / 2 since if there was a remainder after that division... which the remainder can only result to 1 in such a case...then it would mean that value would be at the dead center of the array so even when reversed, position is maintained
+
+### 5-string_toupper.c
+- Here I simply loop through each item in the array and for each item, I do a second loop to check if its char matches any lowercase ASCII value. if so, I add a number to increment it to its uppercase ASCII form 
+
+### 6-cap_string.c
+
+
+### 7-leet.c
+- Here I had the letters to change saved in an array as well as the replacement values for each.
+- I then looped through the passed string checking if the letter I'm to change exists in the string and if so, I change it with its respective replacement. I was lucky since the size of the replacement chars and the letters to replace were the same
+
+### 6-cap_string.c
+
+
+### 7-leet.c
+- Here I had the letters to change saved in an array as well as the replacement values for each.
+- I then looped through the passed string checking if the letter I'm to change exists in the string and if so, I change it with its respective replacement. I was lucky since the size of the replacement chars and the letters to replace were the same..
