@@ -37,11 +37,22 @@
 
 ### 7-leet.c
 - Here I had the letters to change saved in an array as well as the replacement values for each.
-- I then looped through the passed string checking if the letter I'm to change exists in the string and if so, I change it with its respective replacement. I was lucky since the size of the replacement chars and the letters to replace were the same
+- I then looped through the passed string checking if the letter I'm to change exists in the string and if so, I change it with its respective replacement. I was lucky since the size of the replacement chars and the letters to replace were the same.
 
-### 6-cap_string.c
+## Advanced Tasks
 
+### 100-rot13.c
+- This function does a substitution Cipher where a char is replaced by the letter 13 chars ahead of it. Notice how I kept an array for normal alphabets and another starting with n.
+- The one starting with 'n' represents what 'a' would be if passed through the cipher.  
+- I simply looped through the normal alphabet array to find the position of each letter in the string and for each, I edited the letter at that position to read what the substitution cipher array would read at that position
 
-### 7-leet.c
-- Here I had the letters to change saved in an array as well as the replacement values for each.
-- I then looped through the passed string checking if the letter I'm to change exists in the string and if so, I change it with its respective replacement. I was lucky since the size of the replacement chars and the letters to replace were the same..
+### 101-print_number.c
+- This function simply first takes a number and checks whether its 0...if so, returns 0
+- If less than 0, I print out a -ve sign then reassign the passed int as a positive value to the same fuction
+- If greater than 0/ positive, I then check whether if divided by 10, the result is greater than 0...if it is, I pass the result of the division to the same function and it keeps doing so until the division reads 0
+- Meanwhile, I also print out the remainder of a division by 10 at every turn the function gets to run
+
+### 102-magic.c
+- This one needs an in depth knowledge of how memory allocation for variables and arrays work in C. The code to add is simply *(p + 5)
+- *p points to int n which being an int, occupies 4 memory slots. The followin variable is an array of ints therefore each int i it has 4 slots taken
+- By adding a value greater than 4 but less than 8 to p, we are simply telling the *p to point to a slot at least 4 slots ahead of n...hence points to a[2]
