@@ -17,15 +17,12 @@ int srcU = 0;
 int destC = strlen(dest);
 /* This counts the number of chars in src array  */
 int srcC = strlen(src);
-/**
- * This acts as a loop count for the addition
- * of chars to dest from src until before the break
- *
- * Now we loop through the values of the src
- * array adding each character to the dest array
- * We'll also initialize a new variable to help
- * track the count
- */
+ /* This acts as a loop count for the addition */
+ /* of chars to dest from src until before the break */
+ /* Now we loop through the values of the src */
+ /* array adding each character to the dest array */
+ /* We'll also initialize a new variable to help */
+ /* track the count */
 while (srcU < srcC && src[srcU] != '\0')
 {
 dest[destC + srcU] = src[srcU];
