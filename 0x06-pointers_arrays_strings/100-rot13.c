@@ -2,7 +2,7 @@
 
 /**
  * rot13 - Substitution Cipher
- * @c: Pointer to string
+ * @s: Pointer to string
  *
  * Description: This function takes a letter and returns
  * its corresponding letter 13 characters later. If it gets
