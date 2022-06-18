@@ -5,7 +5,7 @@
  * @a: Pointer to array
  * @n: number of elements of array
  *
- * Return: void
+ * Return: void type
  */
 
 void reverse_array(int *a, int n)

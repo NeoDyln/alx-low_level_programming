@@ -2,7 +2,7 @@
 
 /**
  * print_number - Prints a number
- * @n: Number passed for printing
+ * @n: Number passed for print
  *
  * Return: void
  */
