@@ -2,7 +2,7 @@
 
 /**
  * rev_string - reverse array
- * @n: integer par
+ * @n: char Passed
  * Return: 0
  */
 

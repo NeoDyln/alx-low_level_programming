@@ -9,21 +9,22 @@
 
 void print_number(int n)
 {
-	if (n > 0)
+	unsigned int nMain = n;
+	if (nMain > 0)
 	{
-		if (n / 10 > 0)
+		if (nMain / 10 > 0)
 		{
-			print_number(n / 10);
+			print_number(nMain / 10);
 		}
-		_putchar((n % 10) + '0');
+		_putchar((nMain % 10) + '0');
 	}
-	else if (n < 0)
+	else if (nMain < 0)
 	{
 		_putchar(45);
-		n = n / -1;
-		print_number(n);
+		nMain = nMain / -1;
+		print_number(nMain);
 	}
-	else if (n == 0)
+	else if (nMain == 0)
 	{
 		_putchar('0');
 	}

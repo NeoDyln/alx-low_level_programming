@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_buffer - prints buffe
- * @b: buffer
+ * print_buffer - prints buffer
+ * @b: buffer to print
  * @size: size
  * Return: void
  */
