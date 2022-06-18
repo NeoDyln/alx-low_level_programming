@@ -3,7 +3,7 @@
 /**
  * rev_string - reverse array
  * @n: char Passed
- * Return: 0
+ * Return: void type
  */
 
 void rev_string(char *n)
