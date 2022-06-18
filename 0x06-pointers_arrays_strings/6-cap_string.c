@@ -7,8 +7,8 @@ char cap_char(char c);
 * cap_string - capitalizes all words of passed string
 * @str: string whose wordsto capitalize
 *
-* Description: Separators of words: space, tabulation, new line,
-* ,, ;, ., !, ?, ", (, ), {, and }
+* Description: Separators of words using: 
+* ,32,'\t','\n',44,59,46,33,63,34,40,41,123,125, - ASCII forms
 *
 * Return: pointer to str whose words have been capitalized
 */
