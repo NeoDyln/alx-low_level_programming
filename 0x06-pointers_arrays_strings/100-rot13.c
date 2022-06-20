@@ -2,7 +2,7 @@
 
 /**
  * rot13 - Substitution Cipher
- * @c: Pointer to string
+ * @s: Pointer to string
  *
  * Description: This function takes a letter and returns
  * its corresponding letter 13 characters later. If it gets
@@ -11,24 +11,25 @@
  * Return: Encrypted string
  */
 
-char *rot13(char *c)
+char *rot13(char *s)
 {
-	int x,y = 0;
-	char letts[] = "abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNORSTUVWXYZ";
-	char lettsS[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	
-	int lenC = strlen(c);
-	for (x = 0; x < lenC; x++)
-	{
-		for (y = 0; y < lenC; y++)
-		{ 
-			if (c[x] == letts[y])
-			{
-				c[x] = lettsS[y];
-				break;
-			}
-		}
-	}
-	return (c);
+int count = 0, i;
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
+while (*(s + count) != '\0')
+{
+
+for (i = 0; i < 52; i++)
+{
+if (*(s + count) == alphabet[i])
+{
+*(s + count) = rot13[i];
+break;
+}
+}
+count++;
+}
+
+return (s);
 }

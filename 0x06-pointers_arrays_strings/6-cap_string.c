@@ -1,41 +1,80 @@
 #include "main.h"
 
+int is_sep(char c);
+char cap_char(char c);
+
 /**
- * *cap_string - Capitalizes every word
- * @c: string pointer
- *
- * Description: At every point where any of the 
- * below chars appears, we capitalize the next char after it
- *
- * Return: pointer to update
- */
-
-char *cap_string(char *c)
+* cap_string - capitalizes all words of passed string
+* @str: string whose wordsto capitalize
+*
+* Description: Separators of words using
+* ,32,'\t','\n',44,59,46,33,63,34,40,41,123,125, - ASCII forms
+*
+* Return: pointer to str whose words have been capitalized
+*/
+char *cap_string(char *str)
 {
-	char check[14] = {32,'\t','\n',44,59,46,33,63,34,40,41,123,125,'\0'};
-	int lenC = strlen(c);
+	int i;
+	int sep_prev = 0;
 
-	int x,y,z = 0;
-
-	for (x = 0; x < lenC; x++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (y =0; check[y] != '\0'; y++)
+		/* check if the current charater is a separator */
+		if (is_sep(str[i]))
 		{
-			if (c[x] == check[y])
-			{
-				for (z = 0; check[z] != '\0'; z++)
-				{
-					if (c[x + 1] == check[z])
-						c[x + 2] = c[x + 2] - 32;
-					if (c[x + 1] != check[z] && c[x + 1] == '0')
-						continue;
-					if (c[x + 1] != check[z] && c[x + 1] != '0')
-						c[x + 1] = c[x + 1] - 32;
-				}
-			}
-			if (c[x] == '0')
-				continue;
+			sep_prev = 1;
+		}
+		/* check if the previous character was a separator */
+		else if (sep_prev)
+		{
+			str[i] = cap_char(str[i]);
+			sep_prev = 0;
 		}
 	}
-	return c;
+
+	/* capitalize the first character if string is non-empty */
+	if (i > 0)
+		str[0] = cap_char(str[0]);
+
+	return (str);
+}
+
+/**
+* is_sep - checks whether a given character is a separator
+* @c: character to be checked
+*
+* Description:
+* Separators are: space, tabulation, new line,
+* ,, ;, ., !, ?, ", (, ), {, and }
+*
+* Return: 1 if c is a separator. 0 otherwise
+*/
+int is_sep(char c)
+{
+	char seps[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')',
+				'{', '}'};
+	int n = sizeof(seps) / sizeof(seps[0]);
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		if (c == seps[i])
+			return (1);
+	}
+
+	return (0);
+}
+
+/**
+* cap_char - gets the uppercase value of a character
+* @c: character whose uppercase value to find
+*
+* Return: the uppercase vallue of c if c is in lowercase. Otherwise c
+*/
+char cap_char(char c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+
+	return (c);
 }
