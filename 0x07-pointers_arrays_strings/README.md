@@ -17,3 +17,8 @@
 
 ### 2-strchr.c
 - This function locates a character in a string passed and returns its memory address else returns NULL
+
+### 3-strspn.c
+- This function checks whether a string has a particular set of characters from those passed in the function and if so, counts the number of other occurrences of characters in the string that match the one being checked up until when a char in the string is absent...I hope it made sense
+
+

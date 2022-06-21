@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_diagsums - sum of the two diagonals 
+ * print_diagsums - sum of the two diagonals
  * @a: array of chars
  * @size: size
+ *
  * Return: void
  */
 

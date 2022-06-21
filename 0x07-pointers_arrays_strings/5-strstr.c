@@ -2,18 +2,18 @@
 
 /**
  * _strstr - Checks for occurence
- * @haystack: String examined
+ * @haystack: Check string
  * @needle: Counter check
  * Return: return 0
  **/
 
 char  *_strstr(char *haystack, char *needle)
 {
-	char *str1, *str2; /*Declaring variables*/
+	char *str1, *str2;
 
 	while (*haystack != '\0')
 	{
-		str1 = haystack; /*values*/
+		str1 = haystack;
 		str2 = needle;
 
 		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
