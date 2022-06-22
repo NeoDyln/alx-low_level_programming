@@ -10,23 +10,23 @@
 
 char *_strchr(char *s, char c)
 {
-	int count = 0;
-	int sizeS = sizeof(s);
-	int elementsS = sizeS / sizeof(s[0]);
-	char *p;
 
-	for (count = 0; count <= elementsS; count++)
+	while (*s != '\0') /*Declaring WHILE*/
 	{
-		if (*(s + count) == c && count < elementsS)
+		if (*s == c) /*if s ==  c*/
 		{
-			p = &s[count];
-			break;
+			return (s); /*return s*/
 		}
-		if (*(s + count) != c && count == elementsS)
-		{
-			p = NULL;
-			break;
-		}
+
+		++s;
 	}
-	return (p);
+
+	if (*s == c)
+	{
+		return (s);
+
+	}
+
+
+	return (0);/* values null*/
 }
