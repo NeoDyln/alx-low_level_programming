@@ -9,44 +9,37 @@
  */
 
 unsigned int _strspn(char *s, char *accept)
-{
-	unsigned int spnlen = 0;
-	int numS = countStr(s);
-	int numAccept = countStr(accept);
-	int loopS, loopA, check1, check2 = 0;
 
-	for (loopS = 0; loopS < numS; loopS++)
+{
+	int i, j;
+	int count = 0;
+	char *str1, *str2;
+
+	str1 = s;
+	str2 = accept;
+
+	i = 0;
+	while (str1[i] != '\0') /*Declaring WHILE *s */
 	{
-		if (check2 > 0)
-			break;
-		for (loopA = 0; loopA < numAccept; loopA++)
+		j = 0;
+		while (str2[j] != '\0') /*Declaring WHILE *accept*/
 		{
-			 if (s[loopS] == accept[loopA] && check1 == 0)
-			 {
-				check1++;
-				spnlen++;
+			if (str2[j] == str1[i]) /*Evaluate condition*/
+			{
+				count++; /*count number*/
 				break;
-			 }
-			 if (s[loopS] == accept[loopA] && check1 == 1)
-			 {
-				 spnlen++;
-				 break;
-			 }
-			 if (s[loopS] != accept[loopA] && check1 == 1)
-			 {
-				 check2++;
-				 break;
-			 }
-		}
-	}
-	return (spnlen);
-}
+			}
 
-int countStr(char *s)
-{
-	int counter = 0;
-	for (counter = 0; s[counter] != '\0'; counter++)
-	{
+			j++;    /*add j+1*/
+		}
+
+		if (s[i] != accept[j]) /*If aren't equals*/
+		{
+			break;
+		}
+
+		i++; /*add x+1*/
 	}
-	return (counter);
+
+	return (count); /*return the value of count*/
 }
