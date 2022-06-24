@@ -12,5 +12,5 @@
 - This prints the function name followed by a new line
 
 ### 1-args.c
-- To avoid the compile error, I casted the array to a void function so as to say it should not return anything to the function
-- Otherwise, I just printed the value of argc
+- To avoid the compile error, I casted the array to an unused attribute function as present in the stdlib library otherwise the gcc(Compile function) would return an error of unused argument
+- Also argc considers the initialized function as an argument so in order to count it as zero, we have to use an if statement that subtracts it if there are other arguments else we print 0
