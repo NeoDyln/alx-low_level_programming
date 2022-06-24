@@ -9,4 +9,8 @@
 
 ## Mandatory Tasks
 ### 0-whatsmyname.c
-- This prints its name, followed by a new line
+- This prints the function name followed by a new line
+
+### 1-args.c
+- To avoid the compile error, I casted the array to a void function so as to say it should not return anything to the function
+- Otherwise, I just printed the value of argc
