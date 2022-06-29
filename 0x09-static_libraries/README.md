@@ -2,6 +2,10 @@
 - This folder contains infor about creating static libraries with C
 
 ## Basics
+## Static Libraries
+- These are objects of code that one has written and wishes to reuse later on by pulling all of them into one archive
+- Static libraries are different in that they are linked at run time to the programs using it unlike others which copy code into the main program file.
+
 ### main.h
 - This file lists all the prototypes of the functions used
 
