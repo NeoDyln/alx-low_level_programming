@@ -3,7 +3,7 @@
 /**
  * strtow - splits a string into words
  * @str: string of words to be split
- * Return: double pointer to strings
+ * Return: pointer to string pointer (double pointer)
  */
 char **strtow(char *str)
 {
