@@ -12,5 +12,9 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 int countWords(char *s);
+int startIndex(char *s, int index);
+int endIndex(char *s, int index);
+int isSpace(char c);
+char **strtow(char *str);
 
 #endif
