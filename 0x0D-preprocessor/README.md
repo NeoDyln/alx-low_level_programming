@@ -39,6 +39,14 @@
       ==> BUFSIZE
     #define BUFSIZE 1024
 
+## Macro Arguments
+- Macros also can take arguments and these args are defined in the macro declaration like so
+- - #define macro_name(arg1, arg2)
+- We can also define an operation to be done if arguments are present like so
+- - #define min(X, Y)  ((X) < (Y) ? (X) : (Y))
+- Values inside string literals (Quotes) won't always be replaced by their matching value
+
+
 ### main.h
 - This file has all prototypes of the functions I'll use
 
@@ -49,6 +57,6 @@
 - This file includes code for a macro named PI which shall be used in 1-main.c
 
 ### 2-main.c
-- This file borrows the concepts from int main(int argc, char **argv). You can check out how I did it in the project and README I did earlier here (https://github.com/NeoDyln/alx-low_level_programming/tree/main/0x0A-argc_argv)
+- This file uses a system macro called __FILE__ that has its token_sequence set to the file name so all you need to do is print it out
 
 
