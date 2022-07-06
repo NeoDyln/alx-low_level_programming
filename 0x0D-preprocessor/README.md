@@ -59,4 +59,8 @@
 ### 2-main.c
 - This file uses a system macro called __FILE__ that has its token_sequence set to the file name so all you need to do is print it out
 
+### 3-function_like_macro.h
+- This file uses a macro function (Check above for macro function explanations) and it checks whether its passed number is less than 0. If true, it negates it else returns its origial value
 
+### 4-sum.h
+- This file uses a macro summation whic takes in the two passed numbers, and returns a summation
