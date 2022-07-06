@@ -1,5 +1,7 @@
 # About
 - This folder contains infor about creating static libraries with C
+- For this particular project, I had a set of C files (All those in the project) that I needed to compile and assemble then create a single library with all those assembled (.o) files which I named libmy.a
+- I was also required to create a single shell script (.sh) that does all that I just explained above
 
 ## Basics
 ## Static Libraries
