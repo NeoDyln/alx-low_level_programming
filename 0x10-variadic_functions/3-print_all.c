@@ -15,9 +15,9 @@ void print_all(const char * const format, ...)
 	va_start(allList, format);
 	while (format[checkF])
 	{
-		while (dataT[checkD])
+		while (dataT[checkD] != '\0')
 		{
-			if (format[checkF] == dataT[checkD] && c)
+			if (format[checkF] == dataT[checkD] && c == 1)
 			{
 				printf(", ");
 				break;
