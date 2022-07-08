@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list strList;
 	unsigned int count = 0;
 	char *ranStr;
-	
+
 	va_start(strList, n);
 	for (count = 0; count < n; count++)
 	{
