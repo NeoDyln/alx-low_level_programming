@@ -17,21 +17,14 @@ void print_all(const char * const format, ...)
 
 	while (format && format[checkF])
 	{
-		/* Check data formats passed - check checkF'th value exists */
-		/* We'll increment the value at every stage in the loop */
-
 		while (dataT && dataT[checkD])
 		{
 			if (format[i] == t_arg[j] && c)
 			{
 				printf(", ");
 				break;
-			}
-			checkD++;
+			}checkD++;
 		}
-
-		/* Check actual data formats exist. Is checkD'th value there */
-		/* We'll increment the value at every stage in the loop */
 	switch (format[checkF])
 	{
 		case 'c':
@@ -45,7 +38,6 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			str = va_arg(allList, char *), c = 1;
-
 			if (!str)
 			{
 				printf("(nil)");
@@ -53,9 +45,6 @@ void print_all(const char * const format, ...)
 			}
 		printf("%s", str);
 		break;
-	}
-
-
-	checkF++;
+	}checkF++;
 	}
 }
