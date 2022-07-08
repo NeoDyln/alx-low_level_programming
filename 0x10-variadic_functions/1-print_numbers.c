@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - Prints numbers passed in
- * @separator: value to be added between numbers
+ * @separator: value added between nums
  * @n: number of values to be printed
  *
  * Return: void
@@ -18,7 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (count = 0; count < n; count++)
 	{
 		printf("%d", va_arg(numPrint, int));
-		
+
 		if (count < n - 1 && separator != NULL)
 			printf("%s", separator);
 	}

@@ -28,32 +28,33 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			checkD++;
+		}
 
-			/* Above we check if actual data formats exist. If so, check if checkD'th value exists */
-			/* We'll increment the value at every stage in the loop */
-			switch (format[checkF])
-			{
-				case 'c':
-					printf("%c", va_arg(allList, int)), c = 1;
-					break;
-				case 'i':
-					printf("%d", va_arg(allList, int)), c = 1;
-					break;
-				case 'f':
-					printf("%f", va_arg(alList, double)), c = 1;
-					break;
-				case 's':
-					str = va_arg(allList, char *), c = 1;
-
-					if (!str)
-					{
-						printf("(nil)");
-						break;
-					}
-				printf("%s", str);
+		/* Above we check if actual data formats exist. If so, check if checkD'th value exists */
+		/* We'll increment the value at every stage in the loop */
+		switch (format[checkF])
+		{
+			case 'c':
+				printf("%c", va_arg(allList, int)), c = 1;
 				break;
-																								}
-			
+			case 'i':
+				printf("%d", va_arg(allList, int)), c = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(alList, double)), c = 1;
+				break;
+			case 's':
+				str = va_arg(allList, char *), c = 1;
+
+				if (!str)
+				{
+					printf("(nil)");
+					break;
+				}
+			printf("%s", str);
+			break;
+		}
+
 
 		checkF++;
 	}
