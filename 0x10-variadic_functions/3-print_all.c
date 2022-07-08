@@ -12,9 +12,7 @@ void print_all(const char * const format, ...)
 	va_list allList;
 	int checkF, checkD, c = 0;
 	char dataT[5] = "cifs";
-
 	va_start(allList, format);
-
 	while (format && format[checkF])
 	{
 		while (dataT && dataT[checkD])
@@ -47,4 +45,5 @@ void print_all(const char * const format, ...)
 		break;
 	} checkF++;
 	}
+	printf("\n");
 }
