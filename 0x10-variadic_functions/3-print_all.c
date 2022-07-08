@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}checkD++;
+			} checkD++;
 		}
 	switch (format[checkF])
 	{
@@ -45,6 +45,6 @@ void print_all(const char * const format, ...)
 			}
 		printf("%s", str);
 		break;
-	}checkF++;
+	} checkF++;
 	}
 }
