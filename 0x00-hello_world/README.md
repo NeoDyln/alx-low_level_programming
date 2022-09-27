@@ -3,7 +3,7 @@
 - Each of these is Betty linter compliant. To confirm if your file is betty compliant, you'll need the betty linter installed and afterwards, check using betty file_name
 - gcc will compile using the aside options so include them while testing: -Wall -Werror -Wextra -pedantic -std=gnu89
 
-### The SheBang
+## The SheBang
 - Notice how every file's fist line is the below code line 
 ``` shell
 #!\bin\bash 
@@ -11,8 +11,8 @@
 - This simply means that the code below it is being executed using the program in the directory next to the '#!' symbols
 - In this case, the program is the bash terminal and it is in a folder path of /bin/bash
 
-### Some Notes 
-#### The C Compiler
+## Some Notes 
+### The C Compiler
 - This is a set of modules ( inclusive of a preprocessor, compiler, assembler, and linker ) that convert out source code into an executable C file. 
 - Each of the modules is independent just like how Microsoft Office has independent modules like Word, Excel, etc...Therefore each module has its own functions as we shall see later.
 - Generally, however, the whole compiler does the below process using the modules in the order below
@@ -50,18 +50,18 @@
         gcc -c *.c -o <one_executable_file>
         # *.c means All .c files else specify each .c file wished to be linked separated by a space
         ```
-#### The Preprocessor
+### The Preprocessor
 - The preprocessor has a few roles including:
     - Deletion of comments
     - Copying in code from header files like stdio.h
     - Replaces macro names with code
 - Once done, the resulting code is saved as an intermediate file and passed to the compiler
-#### The Compiler
+### The Compiler
 - The compiler takes the intermediate file above and converts it to assembly code which is basically English instructions of the whole source code. The instructions are an international standard I assume and if not, one defines the assembler to be used.
 - Usually, these are in the .s  files
-#### The Assembler
+### The Assembler
 - Computers can only read binary therefore the assembler's work is to convert the assembly code into binary/ object code, usually with .o extensions.
-#### The linker
+### The linker
 - The linker generally has 2 uses as below:
     - Assume you're working on a team project...there will be multiple C files therefore you'd want one common executable file to run all those files. Well the linker creates just that as long as we define the name of the file, els it creates it to a.out
     - Assume we are using libraries, linker links the libraries to our object code files and basically zips them up into one executable file. The linking type is dependent on the kind of linking being done ie: static or dynamic. Dynamic linking is done automatically by the machine but for static, check out my C project on the same using this link to my github
