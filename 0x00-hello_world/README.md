@@ -12,59 +12,59 @@
 - In this case, the program is the bash terminal and it is in a folder path of /bin/bash
 
 ### Some Notes 
-    #### The C Compiler
-        - This is a set of modules ( inclusive of a preprocessor, compiler, assembler, and linker ) that convert out source code into an executable C file. 
-        - Each of the modules is independent just like how Microsoft Office has independent modules like Word, Excel, etc...Therefore each module has its own functions as we shall see later.
-        - Generally, however, the whole compiler does the below process using the modules in the order below
-            - Preprocessor - Preprocesses source code into an intermediate temporary file
-            - Compiler - Compiles file x into assembly code, usually with .s extensions per compiled file
-            - Assembler - Converts assembly code into machine-readable/ binary code, usually with .o extensions
-            - Linker - Links any libraries we may have included and creates the executable
-        - Remember, C programs are compiled using a function called gcc
-        #### gcc
-        - The gcc function has the options that are as below
-            - gcc
-                - This command on its own, does the whole compilation process but saves the executable to a file named a.out, the object code to source.o, the assembly code to source.s and if preprocessed alone, returns to standard output
-                ``` shell
-                gcc <file.c>
-                # By default, outputs to a.out
-                ```
-            - gcc -E
-                - This command only preprocesses the file and returns it to standard output if no compiler actions are done
-                ``` shell
-                gcc -E <file.c>
-                ```
-            - gcc -S
-                - This command both preprocesses and compiles files but just that. The resulting files are assembly files with the .s extensions
-                ``` shell
-                gcc -S <file(s).c>
-                ```
-            - gcc -c
-                - This command preprocesses, compiles and assembles the code but does not link, therefore output is in the form of .o files which are basically binary code
-                ``` shell
-                gcc -c <file(s).c>
-                ```
-            - gcc -o
-                - This command does everything that gcc -c does, only that it also combines all files passed into one executable file, in addition to linking any libraries listed
-                ``` shell
-                gcc -c *.c -o <one_executable_file>
-                # *.c means All .c files else specify each .c file wished to be linked separated by a space
-                ```
-    #### The Preprocessor
-    - The preprocessor has a few roles including:
-        - Deletion of comments
-        - Copying in code from header files like stdio.h
-        - Replaces macro names with code
-    - Once done, the resulting code is saved as an intermediate file and passed to the compiler
-    #### The Compiler
-    - The compiler takes the intermediate file above and converts it to assembly code which is basically English instructions of the whole source code. The instructions are an international standard I assume and if not, one defines the assembler to be used.
-    - Usually, these are in the .s  files
-    #### The Assembler
-    - Computers can only read binary therefore the assembler's work is to convert the assembly code into binary/ object code, usually with .o extensions.
-    #### The linker
-    - The linker generally has 2 uses as below:
-        - Assume you're working on a team project...there will be multiple C files therefore you'd want one common executable file to run all those files. Well the linker creates just that as long as we define the name of the file, els it creates it to a.out
-        - Assume we are using libraries, linker links the libraries to our object code files and basically zips them up into one executable file. The linking type is dependent on the kind of linking being done ie: static or dynamic. Dynamic linking is done automatically by the machine but for static, check out my C project on the same using this link to my github
+#### The C Compiler
+- This is a set of modules ( inclusive of a preprocessor, compiler, assembler, and linker ) that convert out source code into an executable C file. 
+- Each of the modules is independent just like how Microsoft Office has independent modules like Word, Excel, etc...Therefore each module has its own functions as we shall see later.
+- Generally, however, the whole compiler does the below process using the modules in the order below
+    - Preprocessor - Preprocesses source code into an intermediate temporary file
+    - Compiler - Compiles file x into assembly code, usually with .s extensions per compiled file
+    - Assembler - Converts assembly code into machine-readable/ binary code, usually with .o extensions
+    - Linker - Links any libraries we may have included and creates the executable
+- Remember, C programs are compiled using a function called gcc
+#### gcc
+- The gcc function has the options that are as below
+    - gcc
+        - This command on its own, does the whole compilation process but saves the executable to a file named a.out, the object code to source.o, the assembly code to source.s and if preprocessed alone, returns to standard output
+        ``` shell
+        gcc <file.c>
+        # By default, outputs to a.out
+        ```
+    - gcc -E
+        - This command only preprocesses the file and returns it to standard output if no compiler actions are done
+        ``` shell
+        gcc -E <file.c>
+        ```
+    - gcc -S
+        - This command both preprocesses and compiles files but just that. The resulting files are assembly files with the .s extensions
+        ``` shell
+        gcc -S <file(s).c>
+        ```
+    - gcc -c
+        - This command preprocesses, compiles and assembles the code but does not link, therefore output is in the form of .o files which are basically binary code
+        ``` shell
+        gcc -c <file(s).c>
+        ```
+    - gcc -o
+        - This command does everything that gcc -c does, only that it also combines all files passed into one executable file, in addition to linking any libraries listed
+        ``` shell
+        gcc -c *.c -o <one_executable_file>
+        # *.c means All .c files else specify each .c file wished to be linked separated by a space
+        ```
+#### The Preprocessor
+- The preprocessor has a few roles including:
+    - Deletion of comments
+    - Copying in code from header files like stdio.h
+    - Replaces macro names with code
+- Once done, the resulting code is saved as an intermediate file and passed to the compiler
+#### The Compiler
+- The compiler takes the intermediate file above and converts it to assembly code which is basically English instructions of the whole source code. The instructions are an international standard I assume and if not, one defines the assembler to be used.
+- Usually, these are in the .s  files
+#### The Assembler
+- Computers can only read binary therefore the assembler's work is to convert the assembly code into binary/ object code, usually with .o extensions.
+#### The linker
+- The linker generally has 2 uses as below:
+    - Assume you're working on a team project...there will be multiple C files therefore you'd want one common executable file to run all those files. Well the linker creates just that as long as we define the name of the file, els it creates it to a.out
+    - Assume we are using libraries, linker links the libraries to our object code files and basically zips them up into one executable file. The linking type is dependent on the kind of linking being done ie: static or dynamic. Dynamic linking is done automatically by the machine but for static, check out my C project on the same using this link to my github
 
 ## Mandatory Tasks ##
 
