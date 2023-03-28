@@ -19,6 +19,5 @@ int _strlen(char *s)
 	*/
 	int siz;
 	siz = sizeof(*s) / sizeof(char);
-	printf("Size: %d", siz);
-	return (0);
+	return (siz);
 }
