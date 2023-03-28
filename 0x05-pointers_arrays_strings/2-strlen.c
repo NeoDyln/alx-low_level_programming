@@ -18,6 +18,6 @@ int _strlen(char *s)
 	return (lenS);
 	*/
 	int siz;
-	siz = sizeof(*s) / sizeof(char);
+	siz = sizeof(s) / sizeof(char);
 	return (siz);
 }
