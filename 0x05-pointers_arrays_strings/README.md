@@ -100,10 +100,15 @@ void swap_int(int *a, int *b)
 ``` c
 int _strlen(char *s)
 {
-	int sizeStr;
+	int lenS = 0;
 
-	sizeStr = (sizeof(*s) * sizeof(s)) / sizeof(char);
-	return (sizeStr);
+	// The reason why I opted to use s instead of *s is that in the exmaple scenario, the string was passed in as a string, not as an address to the string
+	// As a result s = string while *s will be the value of the first item
+	while (s[lenS] != '\0')
+	{
+		lenS++;
+	}
+	return (lenS);
 }
 ```
 ### 3-puts.c
