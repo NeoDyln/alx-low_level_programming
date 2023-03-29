@@ -8,13 +8,17 @@
 
 int main(void)
 {
-	int siz;
-	int *p;
 	char c[6] = "Hello";
+	char *p;
 
-	printf("Address of p : %p", &p);
-	siz = (int) sizeof(c)/sizeof(char);
-	printf("Size is: %d", siz);
+	p = &c[0];
+	printf("Value of c: %s\n", c);
+	printf("Address of c : %p\n", &c);
+	printf("Size of c: %lu\n", sizeof(c)*sizeof(&c));
 
+
+	printf("Value of p : %p\n", p);
+	printf("Address of p : %p\n", &p);
+	printf("Size of p: %lu\n", sizeof(p));
 	return (0);
 }
